@@ -1,0 +1,105 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="" Height="250" Width="380"
+        Name="Window">
+    <Grid x:Name="Grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"></RowDefinition>
+            <RowDefinition Height="90"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Button 
+
+            Click="BtnLeft_Click"
+            MouseRightButtonDown="Btn_MouseRightButtonDown"
+                x:Name="BtnOne"
+                Grid.Row="0"
+                FontWeight="Bold"
+                FontSize="25"
+                Width="100"
+                Height="80"
+                HorizontalAlignment="Left"
+                Content="1"
+                Background="Orange"
+                Cursor="Hand"/>
+       
+        <Button 
+              Click="BtnLeft_Click"
+              MouseRightButtonDown="Btn_MouseRightButtonDown"
+                x:Name="BtnTwo"
+                Grid.Row="0"
+                Grid.Column="1"
+                FontWeight="Bold"
+                FontSize="25"
+                Width="100"
+                Height="80"
+                HorizontalAlignment="Left"
+                Content="2"
+                Background="Pink" Cursor="Hand"/>
+        <Button 
+              Click="BtnLeft_Click"
+              MouseRightButtonDown="Btn_MouseRightButtonDown"
+                x:Name="BtnThree"
+                Grid.Row="0"
+                Grid.Column="2"
+                FontWeight="Bold"
+                FontSize="25"
+                Width="100"
+                Height="80"
+                HorizontalAlignment="Left"
+                Content="3"
+                Background="DodgerBlue"
+                 Cursor="Hand"/>
+        <Button 
+              Click="BtnLeft_Click"
+              MouseRightButtonDown="Btn_MouseRightButtonDown"
+                x:Name="BtnFour"
+                Grid.Row="1"
+                Grid.Column="0"
+                FontWeight="Bold"
+                FontSize="25"
+                Width="100"
+                Height="80"
+                HorizontalAlignment="Left"
+                 Content="4" 
+                Background="Red" Cursor="Hand"/>
+        <Button 
+              Click="BtnLeft_Click"
+              MouseRightButtonDown="Btn_MouseRightButtonDown"
+                x:Name="BtnFive"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontWeight="Bold"
+                FontSize="25"
+                Width="100"
+                Height="80"
+                 HorizontalAlignment="Left"
+                 Content="5" 
+                Background="Purple"  Cursor="Hand"/>
+        <Button 
+              Click="BtnLeft_Click"
+              MouseRightButtonDown="Btn_MouseRightButtonDown"
+                x:Name="BtnSix"
+                Grid.Row="1"
+                Grid.Column="2"
+                FontWeight="Bold"
+                FontSize="25"
+                Width="100"
+                Height="80"
+                 HorizontalAlignment="Left"
+                 Content="6" 
+                Background="Gray"  Cursor="Hand"/>
+    </Grid>
+</Window>
