@@ -42,7 +42,6 @@ namespace WpfApp2
             if(sender is Button btn)
             {
                 Grid.Children.Remove(btn);
-                string text = btn.Content.ToString();
                 Window.Title += btn.Content.ToString();
             }
         }
