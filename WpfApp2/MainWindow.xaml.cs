@@ -27,9 +27,9 @@ namespace WpfApp2
         Random random = new Random();
         private void BtnLeft_Click(object sender, RoutedEventArgs e)
         {
-            var r = Convert.ToByte(random.Next(0, 255));
-            var g = Convert.ToByte(random.Next(0, 255));
-            var b = Convert.ToByte(random.Next(0, 255));
+            var r = Convert.ToByte(random.Next(0, 256));
+            var g = Convert.ToByte(random.Next(0, 256));
+            var b = Convert.ToByte(random.Next(0, 256));
             if (sender is Button btn)
             {
                 string messageBox = "Button " + btn.Content.ToString() + " is clicked";
